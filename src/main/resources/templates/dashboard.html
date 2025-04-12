@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Business Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .icon-large {
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">Business Management System</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mb-4">Dashboard</h1>
+        
+        <div class="row g-4">
+            <!-- Customers Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-people icon-large text-primary mb-3"></i>
+                        <h5 class="card-title">Customers</h5>
+                        <p class="card-text">Manage customer information and their purchases</p>
+                        <a href="/customers" class="btn btn-primary">Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-box-seam icon-large text-success mb-3"></i>
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">View and manage product inventory</p>
+                        <a href="/products" class="btn btn-success">Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suppliers Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-truck icon-large text-info mb-3"></i>
+                        <h5 class="card-title">Suppliers</h5>
+                        <p class="card-text">Manage supplier relationships</p>
+                        <a href="/suppliers" class="btn btn-info text-white">Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payments Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-credit-card icon-large text-warning mb-3"></i>
+                        <h5 class="card-title">Payments</h5>
+                        <p class="card-text">Track and manage payment records</p>
+                        <a href="/payments" class="btn btn-warning text-white">Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Console Card -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-database icon-large text-secondary mb-3"></i>
+                        <h5 class="card-title">Database Console</h5>
+                        <p class="card-text">Access H2 database console</p>
+                        <a href="/h2-console" class="btn btn-secondary">Access</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
